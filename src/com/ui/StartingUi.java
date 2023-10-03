@@ -25,7 +25,7 @@ public class StartingUi extends javax.swing.JFrame {
     
     public void ScaleImage(){
         
-        ImageIcon icon = new ImageIcon("C:\\Users\\kunal\\Documents\\NetBeansProjects\\Task_1\\src\\com\\ui\\Guess-a-number.png");
+        ImageIcon icon = new ImageIcon("Guess-a-number.png");
         Image img = icon.getImage();
         Image imgSacle = img.getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon scaledIcon = new ImageIcon(imgSacle);
