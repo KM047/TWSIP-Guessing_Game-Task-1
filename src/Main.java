@@ -15,19 +15,16 @@ import javax.swing.SwingUtilities;
  */
 public class Main {
     
+    Main(){
+    
+        
+        new StartingUi().setVisible(true);
+        
+    }
+    
     public static void main(String[] args) {
         
-        System.out.println("Heloo");
-        
-        SwingUtilities.invokeLater(() -> {
-            GameUi frame = new GameUi();
-            frame.setVisible(true);
-        });
-        
-        
-        
-        
-        
+        new Main();  
     }
     
 }

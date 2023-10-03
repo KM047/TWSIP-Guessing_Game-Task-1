@@ -57,7 +57,7 @@ public class GameOverUi extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 360, 160, 70));
-        getContentPane().add(label, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 500, 500));
+        getContentPane().add(label, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
 
         pack();
         setLocationRelativeTo(null);
