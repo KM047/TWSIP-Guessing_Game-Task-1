@@ -40,7 +40,7 @@ public class GameUi extends JFrame {
     
     public void ScaleImage(){
         
-        ImageIcon icon = new ImageIcon("C:\\Users\\kunal\\Downloads\\background-2.png");
+        ImageIcon icon = new ImageIcon("background-2.png");
         Image img = icon.getImage();
         Image imgSacle = img.getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon scaledIcon = new ImageIcon(imgSacle);
