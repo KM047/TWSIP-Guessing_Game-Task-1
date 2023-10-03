@@ -24,7 +24,7 @@ public class Main {
         
         new Main();  
 
-        System.out.print("Heloo");
+        
         
     }
     
