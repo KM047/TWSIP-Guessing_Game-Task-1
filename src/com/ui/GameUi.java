@@ -62,9 +62,9 @@ public class GameUi extends JFrame {
         attempts--;
         take_attempts++;
         
-        lblatempt.setText(""+take_attempts+"");
+        lblatempt.setText(""+ take_attempts +"");
         
-        lblchance.setText(""+attempts+"");
+        lblchance.setText(""+ attempts +"");
         
         if(attempts == 0){
             displayMessage("You have run out of tries");
@@ -219,7 +219,7 @@ public class GameUi extends JFrame {
         
         if (user.equals("")) {
             
-            JOptionPane.showMessageDialog(null, "Please enter the number");
+            JOptionPane.showMessageDialog(this, "Please enter the number");
             
         } 
         
@@ -266,6 +266,8 @@ public class GameUi extends JFrame {
 
 
             }
+            
+            tfInput.setText("");
         
     }
         
