@@ -24,7 +24,7 @@ public class GameOverUi extends javax.swing.JFrame {
     
     public void ScaleImage(){
         
-        ImageIcon icon = new ImageIcon("C:\\Users\\kunal\\Downloads\\game-over-7952252_1280.png");
+        ImageIcon icon = new ImageIcon("game-over-7952252_1280.png");
         Image img = icon.getImage();
         Image imgSacle = img.getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon scaledIcon = new ImageIcon(imgSacle);
