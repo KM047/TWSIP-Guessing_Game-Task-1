@@ -104,7 +104,6 @@ public class GameUi extends JFrame {
         setAlwaysOnTop(true);
         setMinimumSize(new java.awt.Dimension(500, 500));
         setSize(new java.awt.Dimension(500, 500));
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(153, 255, 255));
@@ -112,7 +111,6 @@ public class GameUi extends JFrame {
         jLabel1.setText("Enter Your Number");
         jLabel1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 255)));
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 211, 56));
 
         tfInput.setFont(new java.awt.Font("Segoe Print", 1, 24)); // NOI18N
         tfInput.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -121,7 +119,6 @@ public class GameUi extends JFrame {
                 tfInputActionPerformed(evt);
             }
         });
-        getContentPane().add(tfInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 108, 70));
 
         btnSubmit.setBackground(new java.awt.Color(51, 255, 255));
         btnSubmit.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
@@ -137,7 +134,6 @@ public class GameUi extends JFrame {
                 btnSubmitActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, 108, 49));
 
         tfOutput.setBackground(new java.awt.Color(0, 0, 0));
         tfOutput.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
@@ -148,22 +144,64 @@ public class GameUi extends JFrame {
                 tfOutputActionPerformed(evt);
             }
         });
-        getContentPane().add(tfOutput, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 410, 300, 50));
 
         lblatempt.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
         lblatempt.setForeground(new java.awt.Color(255, 51, 51));
         lblatempt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblatempt.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Attempt Take", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe Print", 1, 10), new java.awt.Color(255, 51, 51))); // NOI18N
-        getContentPane().add(lblatempt, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, 120, 60));
 
         lblchance.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
         lblchance.setForeground(new java.awt.Color(51, 255, 51));
         lblchance.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblchance.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Chance left", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe Print", 1, 10), new java.awt.Color(51, 255, 51))); // NOI18N
-        getContentPane().add(lblchance, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 120, 120, 60));
 
         label.setMinimumSize(new java.awt.Dimension(500, 500));
-        getContentPane().add(label, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(170, 170, 170)
+                .addComponent(tfInput, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addComponent(tfOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(240, 240, 240)
+                .addComponent(lblchance, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(120, 120, 120)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(170, 170, 170)
+                .addComponent(btnSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addComponent(lblatempt, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(label, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(190, 190, 190)
+                .addComponent(tfInput, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(150, 150, 150)
+                .addComponent(tfOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(120, 120, 120)
+                .addComponent(lblchance, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(290, 290, 290)
+                .addComponent(btnSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(120, 120, 120)
+                .addComponent(lblatempt, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(label, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pack();
         setLocationRelativeTo(null);
@@ -178,58 +216,59 @@ public class GameUi extends JFrame {
         
             
         String user = tfInput.getText();
-
-        int user_input = Integer.parseInt(user);
-
-        if(user_input < 0 || user_input > 100){
-
-            tfInput.setText("");
-            tfOutput.setText("Invalid Number");
-
-        }
-
         
-//            
-
-
-        if (randomNumber == user_input) {
-
-            displayMessage("You win!");
-            JOptionPane.showMessageDialog(GameUi.this, "You win!");
-            try {
-                Thread.sleep(1000);
-                this.dispose();
-            } catch (InterruptedException ex) {
-                Logger.getLogger(GameUi.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            new StartingUi().setVisible(true);
-
+        if (user.equals("")) {
             
-
-        }
-
-        else if (randomNumber < user_input) {
-
-//                System.out.println("Your guess number is high, try again.");
-            displayMessage("Your guess number is high, try again.");
-        }
+            JOptionPane.showMessageDialog(null, "Please enter the number");
+            
+        } 
+        
         else {
-
-//                System.out.println("Too low, try again.");
-            displayMessage("Too low, try again.");
-
-
-        }
-        
-//        attempts++;
-        
-//            System.out.println(attempts);
-//                
-//            System.out.println(take_attempts);
-//            take_attempts++;
             
-//            lblatempt.setText(Integer.toString(attempts));
-//            lblchance.setText(Integer.toString(take_attempts));
+            int user_input = Integer.parseInt(user);
+
+            if(user_input < 0 || user_input > 100){
+
+                tfInput.setText("");
+                tfOutput.setText("Invalid Number");
+
+            }
+
+
+    //            
+
+
+            if (randomNumber == user_input) {
+
+                displayMessage("You win!");
+                JOptionPane.showMessageDialog(GameUi.this, "You win!");
+                try {
+                    Thread.sleep(1000);
+                    this.dispose();
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(GameUi.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                new StartingUi().setVisible(true);
+
+
+
+            }
+
+            else if (randomNumber < user_input) {
+
+    //                System.out.println("Your guess number is high, try again.");
+                displayMessage("Your guess number is high, try again.");
+            }
+            else {
+
+    //                System.out.println("Too low, try again.");
+                displayMessage("Too low, try again.");
+
+
+            }
+        
+    }
+        
 
         
     }//GEN-LAST:event_btnSubmitActionPerformed
