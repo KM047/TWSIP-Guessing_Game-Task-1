@@ -1,6 +1,6 @@
 # TWSIP-Task-1
 
-# **Guessing Game**
+# **Number Guessing Game**
 
 
 
