@@ -18,7 +18,6 @@ Welcome to the Guessing Game repository! This simple and entertaining game will 
 
 - Randomly generated numbers to keep the game exciting.
 - User-friendly interface for an enjoyable gaming experience.
-- Customizable difficulty levels to match your skills.
 - Keep track of your high scores and challenge yourself to beat them.
 - A great project to learn and practice programming concepts like loops and conditionals.
 
